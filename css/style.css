@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962;
+}
+
+/*------- Scroll Top Button -------*/
+
+#scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  
+  font-size: 18px;
+}
+
+#scroll-top:hover {
+  background-color: #555;
+}
+
+/*------- Navigation -------*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #69a9fd;
+}
+
+.offset:before {
+  transition: 2000;
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+
+.audio-off {
+  cursor: pointer;
+}
+
+.remove-audio-off {
+  cursor: pointer;
+  display: none;
+}
+
+.audio-on{
+  cursor: pointer;
+  display: none;
+}
+
+/*------- Carousel -------*/
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+/*------- Experience -------*/
+
+/*------- Jumbotron -------*/
+.jumbotron {
+  border-radius: 0;
+  padding: 2rem 0 3.5rem;
+  margin-bottom: 0;
+  background-color: #e9ecef;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #69a9fd;
+  margin: 0 auto 2rem;
+}
+
+.experience img {
+  max-width: 100%;
+}
+
+.container-card .card {
+  margin: 2rem auto;
+  max-width: 75%;
+  height: 500px;
+  background-color: #e9ecef;
+}
+
+.container-card .card img {
+  align-self: center;
+  max-width: 512px;
+  max-height: 256px;
+}
+
+/*------- Accordion -------*/
+
+.accordion .card {
+  border-radius: 0;
+  background: none;
+  border-left-width: 0;
+  border-right-width: 0;
+  
+}
+
+.accordion .card .card-header {
+  background: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 0;
+}
+
+.accordion .card-header .btn {
+  color: #000;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion .card-header .btn:after {
+  content: '\2212';
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
+}
+
+.accordion .card-header .btn.collapsed:after {
+  content: '\002B';
+}
+
+.accordion .card-header .btn:before {
+  content: '';
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 30px;
+  top: 39px;
+}
+
+.accordion .card-body {
+  background-color: #e2e2e2;
+  text-align: left;
+}
+
+/*------- Formation -------*/
+
+.separator {
+  margin-top: 2rem;
+  max-width: 80%;
+}
+
+.formation-container{
+  padding: 2rem 0 3.5rem;
+}
+
+.title-formation {
+  margin-top: 2rem;
+}
+
+.date-formation {
+  margin-top: 1.5rem;
+}
+
+.img-formation {
+  max-width: 100%;
+  margin: 2rem;
+}
+
+/*------- About -------*/
+
+.about-container {
+  padding: 2rem 0 3.5rem;
+  background-color: rgb(250, 249, 242);
+}
+
+.about-container .row {
+  justify-content: center;
+}
+
+.works-container {
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.works-container .card {
+  margin-top: 4%;
+}
+
+.single-content {
+  margin-bottom: 4%;
+  position: relative;
+  transition: .3s;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+  
+}
+
+.single-content .text-content,
+.single-content:after {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
+
+.single-content:after {
+  content: '';
+  display: block;
+  background-color: #69a9fd;
+  top: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transform: rotate3d(-1, 1, 0, 100deg);
+  transition: .4s;
+}
+
+.single-content:hover:after {
+  opacity: .9;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.single-content img {
+  width: 100%;
+  height: auto;
+}
+
+.text-content {
+  top: 45%;
+  opacity: 0;
+  z-index: 1;
+  transform: translate(10%, -30%);
+  transition: .3s;
+  text-align: center;
+  color: #fff;
+}
+
+.text-content h4 {
+  font-family: "Lato", sans-serif;
+}
+
+.single-content:hover .text-content {
+  opacity: 1;
+  transform: translate(0, -50%);
+  transition-delay: .3s;
+}
+
+.about-container video {
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.map-container iframe{
+  height: 100%;
+  width: 100%;
+
+}
+
+/*------- Contact -------*/
+
+.contact-container {
+  padding: 2rem 0 3.5rem;
+  background: rgb(182, 182, 182);
+}
+
+.contact-form{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+
+.contact-form .form-control{
+  border-radius:1rem;
+}
+
+.contact-image{
+  text-align: center;
+}
+
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+
+.social-content {
+  margin-left: 2rem;
+}
+
+.facebook, .insta, .linkedin {
+  width: 32px;
+  height: 32px;
+}
+
+.facebook:hover, .insta:hover, .linkedin:hover {
+  transform: scale(1.2);
+}
+
+.margin-insta {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.contact-form form{
+  padding: 14%;
+}
+
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+
+/*------- Footer -------*/
+
+.footer-container {
+  background-color: #40474e;
+  color: white;
+  padding: 1rem 0 2rem;
+}
+
+/*------- Media Queries -------*/
+
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+      font-size: 2.3rem;
+      letter-spacing: .1rem;
+      padding-bottom: .5rem;
+  }
+  .carousel-caption h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+      font-size: 1rem;
+  }
+  .social-content {
+    margin-bottom: 3rem;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .accordion .card-header .btn:after {
+    display: none;
+  }
+  .accordion .card-header .btn.collapsed:after {
+    display: none;
+  }
+  .accordion .card-header .btn:before {
+    display: none;
+  }
+}
+
+@media (max-width: 901px) {
+  .align-content {
+    display: block;
+  }
+}
+
+@media (max-width: 510px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+@media (max-width: 304px) {
+  .margin-insta {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 279px) {
+  .text-content h4 {
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 218px) {
+  .text-content h4 {
+    font-family: "Lato", sans-serif;
+    font-size: small;
+  }
+}
+
+@media (max-width: 195px) {
+  .text-content h4 {
+    display: none;
+  }
+  .single-content:after {
+    display: none;
+  }
+}
+
+/*------- Fix Bugs -------*/
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
